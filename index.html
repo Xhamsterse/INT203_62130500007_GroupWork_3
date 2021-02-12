@@ -24,7 +24,7 @@
 
 <body>
   <div id="app" class="max-w-xl mx-auto my-10 space-y-3 bg-gray-100">
-    <h1 class="text-xl">Photo Gallery ( {{ image.filter( t => !t.done ).length }} )</h1>
+    <h1 class="text-xl">Photo Gallery ( {{ image.filter( t => t.done ).length }} )</h1>
     <div class="w-48">
     <ul>
       <li v-for="(image,index) in image" :class="{done: image.done}">
